@@ -1,7 +1,7 @@
 /**
  * Pati Felix — overrides Solox 4 + modo 2 (topo escuro, seções claras)
  */
-@import url("../../design-tokens.css");
+@import url("design-tokens.css");
 
 :root {
   --solox-base: var(--fx-mint);

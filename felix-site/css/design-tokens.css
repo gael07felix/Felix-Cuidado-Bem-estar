@@ -1,0 +1,76 @@
+/**
+ * Pati Felix — design tokens (extraídos da identidade visual da logo)
+ * Uso: importar no site e substituir cores padrão dos templates Solox/Wivana.
+ */
+
+:root {
+  /* Fundos */
+  --fx-black: #000000;
+  --fx-bg: #050505;
+  --fx-bg-elevated: #0f0f0f;
+  --fx-bg-soft: #141414;
+  --fx-surface-light: #f6f4f8;
+  --fx-surface-muted: #ebe6f0;
+
+  /* Marca — versão colorida da logo */
+  --fx-mint: #8cb896;
+  --fx-mint-light: #a8c9af;
+  --fx-mint-dark: #6f9a78;
+  --fx-lavender: #9b86b8;
+  --fx-lavender-light: #b5a3cc;
+  --fx-lavender-dark: #7d6a9a;
+
+  /* Marca — versão monocromática (logo branca no preto) */
+  --fx-white: #ffffff;
+  --fx-silver: #e8e8e8;
+  --fx-muted: #a3a3a3;
+
+  /* Gradientes (nome “Pati Felix” na logo colorida) */
+  --fx-gradient-brand: linear-gradient(
+    90deg,
+    var(--fx-mint) 0%,
+    var(--fx-lavender) 100%
+  );
+  --fx-gradient-brand-soft: linear-gradient(
+    135deg,
+    rgba(140, 184, 150, 0.25) 0%,
+    rgba(155, 134, 184, 0.25) 100%
+  );
+
+  /* Texto */
+  --fx-text-on-dark: var(--fx-white);
+  --fx-text-on-dark-muted: rgba(255, 255, 255, 0.72);
+  --fx-text-on-light: #1a1a1a;
+  --fx-text-on-light-muted: #5c5c5c;
+  --fx-text-accent: var(--fx-mint);
+  --fx-text-secondary: var(--fx-lavender);
+
+  /* UI */
+  --fx-border: rgba(155, 134, 184, 0.35);
+  --fx-border-subtle: rgba(255, 255, 255, 0.12);
+  --fx-focus: var(--fx-mint-light);
+
+  --fx-btn-primary-bg: var(--fx-mint);
+  --fx-btn-primary-text: var(--fx-black);
+  --fx-btn-primary-hover: var(--fx-mint-light);
+
+  --fx-btn-secondary-bg: transparent;
+  --fx-btn-secondary-text: var(--fx-white);
+  --fx-btn-secondary-border: var(--fx-lavender);
+  --fx-btn-secondary-hover: rgba(155, 134, 184, 0.15);
+
+  /* Tipografia (alinhar ao traço fino da logo) */
+  --fx-font-display: "Cormorant", "Philosopher", Georgia, serif;
+  --fx-font-body: "Plus Jakarta Sans", "Lato", system-ui, sans-serif;
+  --fx-font-weight-title: 300;
+  --fx-font-weight-body: 400;
+  --fx-letter-spacing-wide: 0.12em;
+  --fx-letter-spacing-title: 0.08em;
+
+  /* Raios e sombras */
+  --fx-radius: 12px;
+  --fx-radius-pill: 999px;
+  --fx-shadow-soft: 0 24px 48px rgba(0, 0, 0, 0.35);
+  --fx-shadow-glow-mint: 0 0 40px rgba(140, 184, 150, 0.2);
+  --fx-shadow-glow-lavender: 0 0 40px rgba(155, 134, 184, 0.2);
+}

@@ -1,26 +1,25 @@
 # Felix Cuidado & Bem-estar — site Pati Felix
 
-Repositório do site one-page em [`felix-site/`](felix-site/index.html).
+Site one-page na raiz do repositório ([`index.html`](index.html)).
 
 ## Publicação (GitHub Pages)
 
-O workflow [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) publica a pasta `felix-site` como site estático. A página principal é `felix-site/index.html`.
+O workflow [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) publica o repositório como site estático. A página principal é `index.html`.
 
-Após o push na branch `main`, ative em **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+URL: **https://gael07felix.github.io/Felix-Cuidado-Bem-estar/**
 
-URL prevista: **https://gael07felix.github.io/Felix-Cuidado-Bem-estar/**
+Na Vercel, conecte o repositório sem subpasta — o `index.html` na raiz é detectado automaticamente.
 
 ## Desenvolvimento local
 
 ```bash
-cd felix-site
 npx --yes serve .
 ```
 
 ## Enviar alterações
 
 ```powershell
-git push -u origin main
+git push origin main
 ```
 
 (Requer `gh auth login` na conta **gael07felix**.)

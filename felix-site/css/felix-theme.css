@@ -476,10 +476,6 @@ body {
   margin-bottom: 0;
 }
 
-.why-choose-one__feature-carousel .feature-one__item__icon {
-  background-color: var(--fx-mint);
-}
-
 .why-choose-one__feature-carousel .feature-one__item__sub-title {
   color: var(--fx-lavender-dark);
 }
@@ -511,6 +507,12 @@ body {
   .about-one__content {
     padding-top: 0;
   }
+}
+
+.sec-title__img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
 }
 
 /* Sobre — tipografia herdada do Solox 1 (solox.css); só ajustes de cor da marca */
@@ -731,13 +733,14 @@ body {
 }
 
 .faq-one__media {
-  min-height: 280px;
+  display: flex;
+  min-height: 240px;
 }
 
 @media (min-width: 992px) {
   .faq-one__media {
     min-height: 100%;
-    display: flex;
+    align-self: stretch;
   }
 }
 
@@ -745,14 +748,9 @@ body {
   border-radius: var(--fx-radius);
   width: 100%;
   height: 100%;
-  min-height: 280px;
+  min-height: 240px;
   object-fit: cover;
-}
-
-@media (min-width: 992px) {
-  .faq-one__image {
-    min-height: 520px;
-  }
+  object-position: center;
 }
 
 .faq-one__eyebrow {
@@ -881,6 +879,22 @@ body {
 
 .service-four__content__customer__count {
   color: var(--fx-text-on-light);
+}
+
+/* Cards menores (Eventos, Quick Massage, Atendimento premium) — mesma altura */
+.service-four .col-lg-4 .service-card-four img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  min-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width: 992px) {
+  .service-four .col-lg-4 .service-card-four img {
+    min-height: 360px;
+  }
 }
 
 /* Cards — texto explicativo no hover */
@@ -1238,9 +1252,9 @@ body {
 
 .felix-footer__logo img {
   width: auto;
-  max-width: 160px;
+  max-width: 400px;
   height: auto;
-  max-height: 220px;
+  max-height: 100px;
   object-fit: contain;
 }
 

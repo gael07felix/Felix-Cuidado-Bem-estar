@@ -1,4 +1,5 @@
 .cursor/
+.vercel/
 node_modules/
 .DS_Store
 Thumbs.db
@@ -10,3 +11,4 @@ Thumbs.db
 bracketweb.com_solox_html_index_4_one_page_ht/
 bracketweb.com_solox_html_index_one_page_html/
 wivana-html.zaderonstudio.com/
+.vercel

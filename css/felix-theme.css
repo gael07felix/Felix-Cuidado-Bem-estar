@@ -903,8 +903,10 @@ body {
   inset: 0;
   z-index: 3;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 12px;
   padding: 28px 22px;
   background: rgba(5, 5, 5, 0.88);
   opacity: 0;
